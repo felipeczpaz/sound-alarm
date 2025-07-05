@@ -1,69 +1,83 @@
-# React + TypeScript + Vite
+# React Sound Alarm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React Sound Alarm](https://via.placeholder.com/800x400.png?text=React+Sound+Alarm) <!-- Replace with an actual image link -->
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live version of this project at [GitHub Pages](https://felipeczpaz.github.io/sound-alarm/).
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The **React Sound Alarm** is a modern web application that allows users to set alarms that repeat at specified intervals. Built using **React**, **TypeScript**, **Vite.js**, and **Tailwind CSS**, this project demonstrates a clean and responsive design, along with effective state management and user interaction.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Set Repeat Intervals:** Users can specify how often the alarm should repeat (in hours).
+- **Countdown Timer:** A real-time countdown timer displays the time remaining until the next alarm.
+- **User-Friendly Interface:** Designed with Tailwind CSS for a clean and modern look.
+- **Sound Notifications:** Plays a sound when the alarm goes off, enhancing user experience.
+- **Responsive Design:** Works seamlessly on both desktop and mobile devices.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Technologies Used
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static types, improving code quality and maintainability.
+- **Vite.js**: A fast build tool that provides a smooth development experience.
+- **Tailwind CSS**: A utility-first CSS framework for creating custom designs without leaving your HTML.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Getting Started
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To get a local copy up and running, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/felipeczpaz/sound-alarm.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd sound-alarm
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   yarn install
+   ```
+
+4. **Start the development server:**
+
+   ```bash
+   yarn dev
+   ```
+
+5. **Open your browser:**
+   Navigate to `http://localhost:5173` to see the application in action.
+
+### Usage
+
+1. Set the desired repeat interval for the alarm in hours.
+
+2. Click the "Start Alarm" button to activate the alarm.
+
+3. The countdown timer will display the time remaining until the next alarm.
+
+4. The alarm will sound when the timer reaches zero, and the countdown will reset.
+
+### Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
+
+### License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Acknowledgments
+
+- Inspired by the need for a simple yet effective alarm application.
+
+- Thanks to the open-source community for providing the tools and libraries that made this project possible.
+
+This project not only showcases your skills in modern web development but also demonstrates your ability to create functional and user-friendly applications. Perfect for your portfolio or curriculum vitae!
