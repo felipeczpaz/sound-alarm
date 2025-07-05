@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://felipeczpaz.github.io/react-sound-alarm",
+  "homepage": "https://felipeczpaz.github.io/sound-alarm",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
