@@ -1,14 +1,10 @@
 # React Sound Alarm
 
-![React Sound Alarm](https://via.placeholder.com/800x400.png?text=React+Sound+Alarm) <!-- Replace with an actual image link -->
+The **React Sound Alarm** is a modern web application that allows users to set alarms that repeat at specified intervals. Built using **React**, **TypeScript**, **Vite.js**, and **Tailwind CSS**, this project demonstrates a clean and responsive design, along with effective state management and user interaction.
 
 ## Live Demo
 
 You can view the live version of this project at [GitHub Pages](https://felipeczpaz.github.io/sound-alarm/).
-
-## Overview
-
-The **React Sound Alarm** is a modern web application that allows users to set alarms that repeat at specified intervals. Built using **React**, **TypeScript**, **Vite.js**, and **Tailwind CSS**, this project demonstrates a clean and responsive design, along with effective state management and user interaction.
 
 ### Features
 
